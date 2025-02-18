@@ -1,4 +1,4 @@
------------------------ CIE10 CATEGORIA ---------------------------
+-- --------------------- CIE10 CATEGORIA ---------------------------
 
 INSERT INTO categoriacie10(strcategoriacie10) VALUES ('Ciertas enfermedades infecciosas y parasitarias');
 INSERT INTO categoriacie10(strcategoriacie10) VALUES ('Tumores (neoplásicas)');
@@ -23,7 +23,7 @@ INSERT INTO categoriacie10(strcategoriacie10) VALUES ('Causas externas de morbil
 INSERT INTO categoriacie10(strcategoriacie10) VALUES ('Factores que influyen en el estado de salud y contacto con los servicios de salud');
 INSERT INTO categoriacie10(strcategoriacie10) VALUES ('Códigos para propósitos especiales');
 
------------------------ CIE10 BLOQUE ---------------------------
+-- --------------------- CIE10 BLOQUE ---------------------------
 
 INSERT INTO bloquecie10(strbloquecie10, idcategoriacie10, strcodagrupado) VALUES ('Enfermedades infecciosas intestinales',1,'A00 - A09');
 INSERT INTO bloquecie10(strbloquecie10, idcategoriacie10, strcodagrupado) VALUES ('Tuberculosis',1,'A15 - A19');
@@ -237,7 +237,7 @@ INSERT INTO bloquecie10(strbloquecie10, idcategoriacie10, strcodagrupado) VALUES
 INSERT INTO bloquecie10(strbloquecie10, idcategoriacie10, strcodagrupado) VALUES ('Asignación provisoria de nuevas afecciones de etiología incierta',22,'U00 - U49');
 INSERT INTO bloquecie10(strbloquecie10, idcategoriacie10, strcodagrupado) VALUES ('Códigos para investigaciones y subclasificaciones alternativas',22,'U82 - U85');
 
------------------------ CIE10 CARPETA ---------------------------
+-- --------------------- CIE10 CARPETA ---------------------------
 
 INSERT INTO carpetacie10 (strcarpetacie10, idbloquecie10, strcodbloquecie10)  VALUES ('COLERA DEBIDO A VIBRIO CHOLERAE O1, BIOTIPO CHOLERAE',1,'A000');
 INSERT INTO carpetacie10 (strcarpetacie10, idbloquecie10, strcodbloquecie10)  VALUES ('COLERA DEBIDO A VIBRIO CHOLERAE O1, BIOTIPO EL TOR',1,'A001');
@@ -12694,7 +12694,7 @@ INSERT INTO carpetacie10 (strcarpetacie10, idbloquecie10, strcodbloquecie10)  VA
 INSERT INTO carpetacie10 (strcarpetacie10, idbloquecie10, strcodbloquecie10)  VALUES ('RESISTENCIA A DROGAS ANTIMICROBIANAS NO ESPECIFICADAS',211,'U849');
 INSERT INTO carpetacie10 (strcarpetacie10, idbloquecie10, strcodbloquecie10)  VALUES ('RESISTENCIA A DROGAS ANTINEOPLASICAS',211,'U850');
 
------------- DEPARTAMENTOS ----------------
+-- --------------------- DEPARTAMENTOS ----------------
 
 INSERT INTO departamentos (departamento, coddepartamento) VALUES ('AMAZONAS', '01');
 INSERT INTO departamentos (departamento, coddepartamento) VALUES ('ANCASH', '02');
@@ -12722,7 +12722,7 @@ INSERT INTO departamentos (departamento, coddepartamento) VALUES ('TUMBES', '23'
 INSERT INTO departamentos (departamento, coddepartamento) VALUES ('CALLAO', '24');
 INSERT INTO departamentos (departamento, coddepartamento) VALUES ('UCAYALI', '25');
 
-------------- PROVINCIAS -----------------
+-- --------------------- PROVINCIAS -----------------
 
 INSERT INTO provincias (iddepartamento, provincia, codprovincia) VALUES (1, 'CHACHAPOYAS', '01');
 INSERT INTO provincias (iddepartamento, provincia, codprovincia) VALUES (1, 'BAGUA', '02');
@@ -12920,7 +12920,7 @@ INSERT INTO provincias (iddepartamento, provincia, codprovincia) VALUES (25, 'PA
 INSERT INTO provincias (iddepartamento, provincia, codprovincia) VALUES (25, 'ATALAYA', '03');
 INSERT INTO provincias (iddepartamento, provincia, codprovincia) VALUES (25, 'PURUS', '04');
 
------------------------ DISTRITOS ---------------------------
+-- --------------------- DISTRITOS ---------------------------
 
 INSERT INTO distritos(idprovincia, distrito, coddistrito) VALUES (1,'Chachapoyas','01');
 INSERT INTO distritos(idprovincia, distrito, coddistrito) VALUES (1,'Asuncion','02');
@@ -14761,7 +14761,7 @@ INSERT INTO distritos(idprovincia, distrito, coddistrito) VALUES (194,'Yurua','0
 INSERT INTO distritos(idprovincia, distrito, coddistrito) VALUES (194,'Sepahua','04');
 INSERT INTO distritos(idprovincia, distrito, coddistrito) VALUES (195,'Purus','01');
 
------------------------ ORPHANET ---------------------------
+-- --------------------- ORPHANET ---------------------------
 
 INSERT INTO orphanet (strorphanet, strcodorphanet) VALUES ('3-Metilcrotonil glicinuria','000006');
 INSERT INTO orphanet (strorphanet, strcodorphanet) VALUES ('5-amino-4-imidazolcarboxamida ribosiduria','250977');
@@ -15245,7 +15245,7 @@ INSERT INTO orphanet (strorphanet, strcodorphanet) VALUES ('ALK-LBCL','364043');
 INSERT INTO orphanet (strorphanet, strcodorphanet) VALUES ('ALK-ALCL','300903');
 INSERT INTO orphanet (strorphanet, strcodorphanet) VALUES ('Aloinmunización anti-Kell materna','275944');
 
------------------------ IPRESS ---------------------------
+-- --------------------- IPRESS ---------------------------
 
 INSERT INTO ipress(strcodipress, strdireccion, chrestado, datfmodificacion, datfregistro, stripress, strruc, strtelefono, iddistrito)  VALUES ('00017081','CALLE CALLE DE LOS INCAS N° 288 LOTIZADORA SEÑOR DE LOS MILAGROS MZ F LOTE 1 Y 2 DISTRITO HUARAL PROVINCIA HUARAL DEPARTAMENTO LIMA ','1',NOW(),NOW(),'CLINICA PRIVADA SAN ANDRES S.A.C.','20408132844','01-2462370',1394);
 INSERT INTO ipress(strcodipress, strdireccion, chrestado, datfmodificacion, datfregistro, stripress, strruc, strtelefono, iddistrito)  VALUES ('00005987','CALLE MIGUEL IGLESIAS N°968','1',NOW(),NOW(),'HOSPITAL MARIA AUXILIADORA','20602251641','01-2171818',1281);
@@ -15548,6 +15548,8 @@ INSERT INTO ipress(strcodipress, strdireccion, chrestado, datfmodificacion, datf
 INSERT INTO ipress(strcodipress, strdireccion, chrestado, datfmodificacion, datfregistro, stripress, strruc, strtelefono, iddistrito)  VALUES ('00010827','OTROS GERVASIO SANTILLANA Nº 260 DISTRITO MIRAFLORES PROVINCIA LIMA DEPARTAMENTO LIMA ','1',NOW(),NOW(),'HOGAR DE LA MADRE CLINICA-HOSPITAL','20108568098','01 4402800',1260);
 INSERT INTO ipress(strcodipress, strdireccion, chrestado, datfmodificacion, datfregistro, stripress, strruc, strtelefono, iddistrito)  VALUES ('00011056','AVENIDA AV. GEMINIS H-17 URB PAPA JUAN XXIII DISTRITO SAN BORJA PROVINCIA LIMA DEPARTAMENTO LIMA ','1',NOW(),NOW(),'OFTALMIC SERVICE SAC','20110787538','2250469',1285);
 INSERT INTO ipress(strcodipress, strdireccion, chrestado, datfmodificacion, datfregistro, stripress, strruc, strtelefono, iddistrito)  VALUES ('00005577','JIRÓN JIRON AGUAYTIA Nº 605 JIRON AGUAYTIA Nº 605 YARINACOCHA CORONEL PORTILLO UCAYALI ','1',NOW(),NOW(),'HOSPITAL AMAZONICO - YARINACOCHA','20175940015','061-596408',1825);
+
+-- --------------------- DIRECTOR ---------------------------
 
 INSERT INTO director(chrestado, datfmodificacion, datfregistro, strdirector, idperfil, idipress)  VALUES ('1',NOW(),NOW(),'FELIX SERGIO CARLOS LINDO SERVALLI ',1,1);
 INSERT INTO director(chrestado, datfmodificacion, datfregistro, strdirector, idperfil, idipress)  VALUES ('1',NOW(),NOW(),'JOSE FERNANDO NAVEDA VALLADARES ',1,2);
@@ -15852,12 +15854,12 @@ INSERT INTO director(chrestado, datfmodificacion, datfregistro, strdirector, idp
 INSERT INTO director(chrestado, datfmodificacion, datfregistro, strdirector, idperfil, idipress)  VALUES ('1',NOW(),NOW(),'',1,301);
 
 
------------------------ DOCUMENTO ---------------------------
+-- --------------------- DOCUMENTO ---------------------------
 
 INSERT INTO documento(documento, datfregistro, datfmodificacion, chrestado) VALUES ('DNI',NOW(),NOW(),1);
 INSERT INTO documento(documento, datfregistro, datfmodificacion, chrestado) VALUES ('Carnet de Extranjería',NOW(),NOW(),1);
 
------------------------ PARENTESCO ---------------------------
+-- --------------------- PARENTESCO ---------------------------
 
 INSERT INTO parentesco(parentesco, datfregistro, datfmodificacion, chrestado) VALUES ('Padre',NOW(),NOW(),1);
 INSERT INTO parentesco(parentesco, datfregistro, datfmodificacion, chrestado) VALUES ('Madre',NOW(),NOW(),1);
@@ -15877,7 +15879,7 @@ INSERT INTO parentesco(parentesco, datfregistro, datfmodificacion, chrestado) VA
 INSERT INTO parentesco(parentesco, datfregistro, datfmodificacion, chrestado) VALUES ('Madrastra',NOW(),NOW(),1);
 INSERT INTO parentesco(parentesco, datfregistro, datfmodificacion, chrestado) VALUES ('Ninguno',NOW(),NOW(),1);
 
------------------------ MEDICO TRATANTE ---------------------------
+-- --------------------- MEDICO TRATANTE ---------------------------
 
 -- INSERT INTO medicotratante(strnombres, strapepaterno, strapematerno, datfnacimiento, iddocumento, strnumdocumento, chrgenero, strRutaImagen, iddistrito, chrestavivo, chrnacionalidad, strpais, strestado, strciudad, strlugarnacimiento, stremail, iddistritoactual, strdireccionactual, strlugarprocedencia, strtelefonofijo, strtelefonomovil, strcmp, strespecialidad, chrestado, datfmodificacion, datfregistro, idperfil, strrne, idipress) VALUES ('Lucia','Jimenez','Quispe',date('now') - interval '60 year', 1, '06045789', 2, '06045789.png', 1271, 1 , 0, null, null, null, 'Hospital Daniel Alcides Carrion', 'l.jimenez@hotmail', 1271, 'Calle Los Alcanfores 549', 'Lima', '5432278', '991367852', '154875', 'Especialidad en Obstetricia', '1', NOW(), NOW(), 2, '1245', 29);
 -- INSERT INTO medicotratante(strnombres, strapepaterno, strapematerno, datfnacimiento, iddocumento, strnumdocumento, chrgenero, strRutaImagen, iddistrito, chrestavivo, chrnacionalidad, strpais, strestado, strciudad, strlugarnacimiento, stremail, iddistritoactual, strdireccionactual, strlugarprocedencia, strtelefonofijo, strtelefonomovil, strcmp, strespecialidad, chrestado, datfmodificacion, datfregistro, idperfil, strrne, idipress) VALUES ('Guillermo','Juarez','Figueroa',date('now') - interval '45 year', 1, '10714588', 1, '10714588.png', 1271, 1 , 0, null, null, null, 'Hospital Daniel Alcides Carrion', 'guilermo@gmail.com', 1271, 'Calle Las Flores 123', 'Lima', '4345789', '993145789', '154578', 'Especialidad en Cirujía Estética', '1', NOW(), NOW(), 2, '1045', 29);
@@ -15886,32 +15888,32 @@ INSERT INTO medicotratante(strnombres, strapepaterno, strapematerno, iddocumento
 INSERT INTO medicotratante(strnombres, strapepaterno, strapematerno, iddocumento, strnumdocumento, strRutaImagen, strcmp, strespecialidad, chrestado, datfmodificacion, datfregistro, idperfil, strrne, idipress) VALUES ('Guillermo','Juarez','Figueroa', 1, '10714588', '10714588.png', '154578', 'Especialidad en Cirujía Estética', '1', NOW(), NOW(), 2, '1045', 29);
 INSERT INTO medicotratante(strnombres, strapepaterno, strapematerno, iddocumento, strnumdocumento, strRutaImagen, strcmp, strespecialidad, chrestado, datfmodificacion, datfregistro, idperfil, strrne, idipress) VALUES ('Josefina','Suarez','Benvenuto', 1, '01455954', '01455954.png', '184512', 'Especialidad en Obstetricia', '1', NOW(), NOW(), 2, '1045', 1);
 
------------------------ PACIENTE ---------------------------
+-- --------------------- PACIENTE ---------------------------
 
-INSERT INTO paciente (strnombres, strapepaterno, strapematerno, datfnacimiento, iddocumento, strnumdocumento, chrgenero, strRutaImagen, iddistrito, chrestavivo, chrnacionalidad, strpais, strestado, strciudad, strlugarnacimiento, stremail, iddistritoactual, strdireccionactual, strlugarprocedencia, strtelefonofijo, strtelefonomovil, chrestado, datfmodificacion, datfregistro, idperfil, idipress, idmedicotratante) VALUES ('Luis','Gonzales','Binasco', date('now') - interval '30 year', 1, '10549869', 1, '10549869.png', 1271, 1 , 0, null, null, null, 'Hospital Daniel Alcides Carrion', 'gonzalesb.luis@gmail.com', 1271, 'Calle Los Alvares 425', 'Lima', '4325589', '939832658', 1, NOW(), NOW(), 3, 1, 1);
+INSERT INTO paciente (strnombres, strapepaterno, strapematerno, datfnacimiento, iddocumento, strnumdocumento, chrgenero, strRutaImagen, iddistrito, chrestavivo, chrnacionalidad, strpais, strestado, strciudad, strlugarnacimiento, stremail, iddistritoactual, strdireccionactual, strlugarprocedencia, strtelefonofijo, strtelefonomovil, chrestado, datfmodificacion, datfregistro, idperfil, idipress, idmedicotratante) VALUES ('Luis','Gonzales','Binasco', DATE_SUB(NOW(), INTERVAL 30 YEAR), 1, '10549869', 1, '10549869.png', 1271, 1 , 0, null, null, null, 'Hospital Daniel Alcides Carrion', 'gonzalesb.luis@gmail.com', 1271, 'Calle Los Alvares 425', 'Lima', '4325589', '939832658', 1, NOW(), NOW(), 3, 1, 1);
 
------------------------ CUIDADOR ---------------------------
+-- --------------------- CUIDADOR ---------------------------
 
 INSERT INTO cuidador(strnombres, strapepaterno, strapematerno, iddocumento, strnumdocumento, chrgenero, strRutaImagen, stremail, iddistritoactual, strdireccionactual, strtelefonofijo, strtelefonomovil, strlugardetrabajo, strparentesconinguno, chrestado, datfmodificacion, datfregistro, chrlaboraactualmente, idperfil, idparentesco, idpaciente) VALUES ('Katiuska','Aguilar','Gonzales', 1, '01455956', 2, '01455956.png', 'k.aguilar@gmail.com', 1271, 'Avenida Los Alamos 1025', '5124589', '999205241', 'Hospital Loayza', 'Personal del hospital', '1', NOW(), NOW(), 1, 4, 4, 1);
 
------------------------ ANTECEDENTE FAMILIAR ---------------------------
+-- --------------------- ANTECEDENTE FAMILIAR ---------------------------
 
-INSERT INTO antecedentefamiliar(strnombres, strapepaterno, strapematerno, datfnacimiento, iddocumento, strnumdocumento, chrgenero, strRutaImagen, chrestavivo, strdetalle, chrestado, datfdiagnostico, datfmodificacion, datfregistro, chrmismaenfermedad, idperfil, idparentesco, idpaciente) VALUES ('Alejandro','Terrones','Linares',date('now') - interval '30 year', 1, '10549865', 1, '10549865.png', 1 , 'El paciente se presenta la misma enfermedad que el paciente', '1', NOW(), NOW(), NOW(), 1, 5, 2, 1);
+INSERT INTO antecedentefamiliar(strnombres, strapepaterno, strapematerno, datfnacimiento, iddocumento, strnumdocumento, chrgenero, strRutaImagen, chrestavivo, strdetalle, chrestado, datfdiagnostico, datfmodificacion, datfregistro, chrmismaenfermedad, idperfil, idparentesco, idpaciente) VALUES ('Alejandro','Terrones','Linares', DATE_SUB(NOW(), INTERVAL 30 YEAR), 1, '10549865', 1, '10549865.png', 1 , 'El paciente se presenta la misma enfermedad que el paciente', '1', NOW(), NOW(), NOW(), 1, 5, 2, 1);
 
------------------------ DISCAPACIDAD ---------------------------
+-- --------------------- DISCAPACIDAD ---------------------------
 
 INSERT INTO discapacidad(strobservaciones, strlimitacionfuncional, chrestado, datfmodificacion, datfregistro, chrinscritoconadis, chrlimitacionfuncional, idpaciente) VALUES ('La discapacidad del paciente es producto por ...', 'El paciente presenta limitación funcinoal...', '1', NOW(), NOW(), 1, 1, 1);
 
------------------------ ENFERMEDAD ---------------------------
+-- --------------------- ENFERMEDAD ---------------------------
 
 INSERT INTO enfermedad(chrconsentimientoinformado, strdetatallediagnostico, strexamenesauxiliares, chrdiagnosticobioquimico, chrdiagnosticoclinico, chrdiagnosticoinmunologico, chrdiagnosticoporgenetico, chrdiagnosticoporimagenes, chrestado, datfmodificacion, datfregistro, idcarpetacie10, idorphanet, idpaciente) VALUES (1, 'El detalle del diagnostico es...', 'Los examenes auxiliares son...', 0, 1, 1, 0, 0, '1', NOW(), NOW(), 449, 209, 1);
 
------------------------ TRATAMIENTO ---------------------------
+-- --------------------- TRATAMIENTO ---------------------------
 
 INSERT INTO tratamiento(strtratamientofarmacologicoespecifico, strtratamientofarmacologiconoespecifico, strtratamientonofarmacologico, chrergoterapia, chrestado, datfmodificacion, datfregistro, chrmedicinaalternativacomplementaria, chrmedicinatradicional, chrterapiafisica, chrterapianutricionalespecifica, chrtratamientofarmacologicoespecifico, chrtratamientofarmacologiconoespecifico, chrtratamientonofarmacologico, idenfermedad) VALUES ('El tratamiento farmacologico especifico...', 'El tratamiento farmacologico NO especifico...', 'El tratamiento farmacologico ...', 1, '1', NOW(), NOW(), 0, 1, 1, 0, 1, 1, 1, 1);
 INSERT INTO tratamiento(strtratamientofarmacologicoespecifico, strtratamientofarmacologiconoespecifico, strtratamientonofarmacologico, chrergoterapia, chrestado, datfmodificacion, datfregistro, chrmedicinaalternativacomplementaria, chrmedicinatradicional, chrterapiafisica, chrterapianutricionalespecifica, chrtratamientofarmacologicoespecifico, chrtratamientofarmacologiconoespecifico, chrtratamientonofarmacologico, idenfermedad) VALUES ('El tratamiento farmacologico especifico 11...', 'El tratamiento farmacologico NO especifico 11...', 'El tratamiento farmacologico 11...', 1, '1', NOW(), NOW(), 1, 0, 1, 0, 1, 1, 1, 1);
 
------------------------ ENLACE INTERES ---------------------------
+-- --------------------- ENLACE INTERES ---------------------------
 
 INSERT INTO enlaceinteres(strenlace, strpaginaweb, strdirigidoa, strdireccion, strtelefono, stremail, datfregistro, datfmodificacion, chrestado)  VALUES ('Federación Peruana de Enfermedades Raras','','Sra Maria Lourdes Rodriguez Presidente','','967 665 921','enfermedadesrarasperu@gmail.com',NOW(),NOW(),'1');
 INSERT INTO enlaceinteres(strenlace, strpaginaweb, strdirigidoa, strdireccion, strtelefono, stremail, datfregistro, datfmodificacion, chrestado)  VALUES ('Asociación de Esclerosis Múltiple','https://esclerosismultipleperu.org/','','','996816131','esclerosismultipleperu@gmail.com ',NOW(),NOW(),'1');
