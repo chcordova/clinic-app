@@ -30,7 +30,7 @@ jobs:
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
-          name: java-app
+          name: clinic-app
           path: '${{ github.workspace }}/target/*.war'
 
   deploy:
@@ -63,4 +63,3 @@ jobs:
           app-name: 'clinic-app'
           slot-name: 'Production'
           package: '*.war'
-          
